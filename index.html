@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cars</title>
+  <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body class="page">
+  <h1 class="page__title">Cars</h1>
+
+  <div class="page__actions">
+    <div class="page__actions search">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Find car"
+        title="Type in a name"
+        class="search__input"
+      >
+
+      <button
+        type="button"
+        onclick="searchCar(event)"
+        class="search__search-btn"
+      >Search
+      </button>
+    </div>
+
+    <button type="button" class="page__actions add-car-btn">Add new car</button>
+  </div>
+
+  <div class="page__modal modal">
+  </div>
+
+  <div class="page__table table">
+    <table id="table" class="table__table">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Model</th>
+          <th>VIN</th>
+          <th>Color</th>
+          <th>Year</th>
+          <th>Price</th>
+          <th>Availability</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+
+      <tbody></tbody>
+
+    </table>
+
+    <div class="table__nav nav">
+      <button id="prev-button" class="nav__button">Previous</button>
+      <button id="next-button" class="nav__button">Next</button>
+    </div>
+  </div>
+  <script type="text/javascript" src="src/scripts/main.js"></script>
+</body>
+</html>
